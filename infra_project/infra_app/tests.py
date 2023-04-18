@@ -21,4 +21,4 @@ class StaticPagesURLTests(TestCase):
         self.assertContains(response, 'Работает!')
 
         response = self.guest_client.get('/second/')
-        self.assertContains(response, 'А это вторая страница')
+        self.assertContains(response, 'А эта тоже работает')
